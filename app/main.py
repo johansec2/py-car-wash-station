@@ -31,7 +31,7 @@ class CarWashStation:
         if self.clean_power > car.clean_mark:
             car.clean_mark = self.clean_power
 
-    def serve_cars(self, cars):
+    def serve_cars(self, cars: list) -> float:
         income = 0
         for car in cars:
             if car.clean_mark < self.clean_power:
